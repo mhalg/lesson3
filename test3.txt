@@ -1,2 +1,7 @@
 This is notification note for lesson3
-update
+To compile Jenkins with Maven we need to install maven from Ubuntu repository (3.6.3) and then update it to latest version (3.8.5). Otherway we will get errors.
+curl https://dlcdn.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz --output apache-maven-3.8.5-bin.tar.gz
+sudo tar xvf apache-maven-3.8.5-bin.tar.gz -C /usr/share (here we got maven installed)
+sudo mv maven maven-3.6.3
+sudo ln -s apache-maven-3.8.5 maven
+mvn package
